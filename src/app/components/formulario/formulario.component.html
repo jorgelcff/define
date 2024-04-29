@@ -1,0 +1,78 @@
+<section class="capture" id="form">
+  <div class="max-width">
+    <h2 class="titlex">Bora Treinar?</h2>
+    <h4 class="subtitle">
+      Venha nos conhecer pessoalmente. Aproveite de toda nossa <br />
+      infraestrutura e os melhores profissionais!
+    </h4>
+    <form [formGroup]="this.form" class="form">
+      <div class="mb-3">
+        <label class="form-label fw-semibold" for="nome">Nome Completo</label>
+        <input
+          class="form-control black-input"
+          type="text"
+          id="nome"
+          [value]="this.getNome()"
+          formControlName="NOME"
+          name="NOME"
+          required
+        />
+      </div>
+      <div>
+        <label class="form-label fw-semibold" for="atividade"
+          >Prática Escolhida</label
+        >
+        <div class="form-group">
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="radio"
+              id="opcao1"
+              value="Musculação"
+              formControlName="ATIVIDADE"
+            />
+            <label class="form-check-label" for="opcao1">Musculação</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="radio"
+              id="opcao2"
+              value="Ginástica"
+              formControlName="ATIVIDADE"
+            />
+            <label class="form-check-label" for="opcao2">Ginástica</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="radio"
+              id="opcao3"
+              value="Artes Marciais"
+              formControlName="ATIVIDADE"
+            />
+            <label class="form-check-label" for="opcao3">Artes Marciais</label>
+          </div>
+        </div>
+      </div>
+      <div class="mb-3">
+        <label class="form-label fw-semibold" for="data">Data</label>
+        <input
+          class="form-control black-input"
+          type="date"
+          id="data"
+          [value]="this.getData()"
+          formControlName="DATA"
+          name="DATA"
+          [max]="this.todaymoremonth"
+          [min]="this.today"
+          required
+        />
+      </div>
+
+      <button type="submit" (click)="this.submit()" class="btn">
+        Marcar aula experimental
+      </button>
+    </form>
+  </div>
+</section>

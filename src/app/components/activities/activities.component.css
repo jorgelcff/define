@@ -1,0 +1,255 @@
+.activities {
+  color: #fff;
+  min-height: 100vh;
+  width: 100%;
+  background: rgb(5, 5, 5);
+  background: linear-gradient(
+    0deg,
+    rgba(5, 5, 5, 1) 15%,
+    rgba(54, 114, 205, 1) 50%,
+    rgba(5, 5, 5, 1) 85%
+  );
+}
+
+.activities .max-width {
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+}
+
+.activities .titlex {
+  padding-top: 1rem;
+  text-align: center;
+  line-height: 50px;
+  font-size: 36px;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+}
+
+.activities .subtitle {
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 300;
+  margin-bottom: 20px;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.activities .carousel .card {
+  position: relative;
+  width: 100%;
+  border: none;
+  display: flex;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 3rem;
+  align-items: center;
+  background-color: transparent;
+}
+
+.activities .carousel .card .carousel-indicators {
+  position: relative;
+}
+
+.ginastica-foto {
+  background: linear-gradient(
+      0deg,
+      rgba(5, 5, 5, 0.5) 0%,
+      rgba(5, 5, 5, 0.5) 100%
+    ),
+    url(/assets/image/ginastica.png) no-repeat;
+  background-position: center;
+}
+
+.musculacao-foto {
+  background: linear-gradient(
+      0deg,
+      rgba(5, 5, 5, 0.5) 0%,
+      rgba(5, 5, 5, 0.5) 100%
+    ),
+    url(/assets/image/musculacao.png) no-repeat;
+  background-position: center;
+}
+.activities .carousel .card .right {
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: #5ab1ef;
+  align-items: center;
+  width: 350px;
+  height: 400px;
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  border-bottom: 5px solid #5ab1ef;
+}
+.activities .carousel .card .right .text {
+  font-size: 24px;
+  font-weight: 700;
+  display: flex;
+  position: relative;
+  bottom: 5px;
+}
+.activities .carousel .card .left {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: #5ab1ef;
+  align-items: center;
+  width: 700px;
+  height: 400px;
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  border-bottom: 5px solid #5ab1ef;
+}
+
+.ginastica {
+  background: url(/assets/image/ginastica_horario.png) no-repeat;
+  background-size: cover;
+}
+
+.artesmarciais-foto {
+  background: linear-gradient(
+      0deg,
+      rgba(5, 5, 5, 0.5) 0%,
+      rgba(5, 5, 5, 0.5) 100%
+    ),
+    url(/assets/image/artes-marciais.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.artesmarciais {
+  background: linear-gradient(
+    0deg,
+    rgba(5, 5, 5, 0.5) 0%,
+    rgba(5, 5, 5, 0.5) 100%
+  );
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center !important;
+}
+
+.musculacao {
+  background: linear-gradient(
+    0deg,
+    rgba(5, 5, 5, 0.5) 0%,
+    rgba(5, 5, 5, 0.5) 100%
+  );
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center !important;
+}
+
+.table-musculacao {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 20px;
+}
+.activities .carousel .card .left .text {
+  font-size: 24px;
+  display: flex;
+  font-weight: 500;
+  position: relative;
+  bottom: 5px;
+}
+
+@media screen and (max-width: 1150px) {
+  .activities .carousel .card .right {
+    width: 300px;
+    height: 350px;
+  }
+
+  .activities .carousel .card .left {
+    width: 600px;
+    height: 350px;
+  }
+
+  .table-musculacao {
+    border-spacing: 10px;
+  }
+}
+
+@media screen and (max-width: 970px) {
+  .activities .carousel .card {
+    gap: 1rem;
+  }
+  .activities .carousel .card .right {
+    width: 250px;
+    height: 300px;
+  }
+
+  .activities .carousel .card .left {
+    width: 500px;
+    height: 300px;
+  }
+
+  .activities .carousel .card .left th {
+    font-size: 16px;
+  }
+
+  .table-musculacao {
+    border-spacing: 5px;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .activities .carousel .card {
+    gap: 0.5rem;
+    flex-direction: column;
+  }
+  .activities .carousel .card .right {
+    width: 400px;
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .activities .carousel .card .left {
+    width: 400px;
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .activities .carousel .card .left th {
+    font-size: 14px;
+  }
+
+  .table-musculacao {
+    border-spacing: 2px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .activities .carousel .card {
+    gap: 1rem;
+    padding: 20px;
+  }
+  .activities .carousel .card .right {
+    width: 100%;
+  }
+
+  .activities .carousel .card .left {
+    width: 100%;
+  }
+
+  .activities .carousel .card .left th {
+    font-size: 12px;
+  }
+
+  .table-musculacao {
+    border-spacing: 1px;
+  }
+}

@@ -1,0 +1,126 @@
+.plans {
+  background: linear-gradient(
+    0deg,
+    rgba(5, 5, 5, 1) 15%,
+    rgba(54, 114, 205, 1) 50%,
+    rgba(5, 5, 5, 1) 85%
+  );
+}
+
+.plans .max-width {
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  color: #fff;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.plans .plans-container {
+  padding: 30px;
+  min-height: 50vh;
+  display: flex;
+  flex-direction: row;
+}
+
+.plans .max-width .titlex {
+  padding-top: 1rem;
+  text-align: center;
+  line-height: 50px;
+  font-size: 36px;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+}
+
+.plans .max-width .plan {
+  width: 30%;
+  min-width: 300px;
+  margin: 20px;
+  padding: 20px 20px 0px 20px;
+  border-radius: 10px 10px 0 0;
+  background: linear-gradient(
+    0deg,
+    rgba(5, 5, 5, 0.5) 0%,
+    rgba(5, 5, 5, 0.5) 100%
+  );
+  border-bottom: 5px solid #5ab1ef;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.plans .plans-container .plan .plan-title {
+  font-family: "Poppins", sans-serif;
+  color: #5ab1ef;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  bottom: 0;
+}
+
+.plans .plans-container .plan .plan-header {
+  font-family: "Poppins", sans-serif;
+  color: #5ab1ef;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 40px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  bottom: 0;
+  line-height: 100px;
+  gap: 5px;
+}
+.plans .plans-container .plan .plan-header p {
+  font-size: 60px;
+}
+.plans .plans-container .plan .plan-body .plan-features {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 300;
+  margin-bottom: 20px;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+.plans .plans-container .plan .plan-recomend {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 300;
+  margin-bottom: 20px;
+  font-family: "Poppins", sans-serif;
+  margin-top: -15px;
+}
+
+@media screen and (max-width: 1260px) {
+  .plans .plans-container .plan .plan-header p {
+    font-size: 54px;
+  }
+
+  .plan:nth-child(1) {
+    order: 1;
+  }
+  .plan:nth-child(2) {
+    order: 3;
+  }
+  .plan:nth-child(3) {
+    order: 2;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .plan:nth-child(1) {
+    order: 2;
+  }
+  .plan:nth-child(2) {
+    order: 1;
+  }
+  .plan:nth-child(3) {
+    order: 3;
+  }
+}

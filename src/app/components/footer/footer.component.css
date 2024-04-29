@@ -1,0 +1,91 @@
+.footer {
+  background: rgba(5, 5, 5, 1);
+  padding: 40px 80px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  font-family: "DM Sans", sans-serif;
+}
+
+.footer .max-width {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  color: #fff;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+}
+.footer p {
+  margin: 10px 0;
+}
+.footer div {
+}
+
+.footer img {
+  width: 200px;
+  margin-bottom: 10px;
+  height: auto;
+}
+
+.footer .copyright {
+  font-size: 14px;
+  color: #888;
+}
+
+.footer .address {
+  font-size: 16px;
+  color: #888;
+}
+
+.footer .contact-info {
+  font-size: 16px;
+  color: #888;
+}
+
+.footer .reserved {
+  font-size: 14px;
+  color: #888;
+  margin-top: 20px;
+}
+
+.footer .marca {
+  width: 250px;
+  text-align: start;
+}
+.footer .medias {
+  width: 250px;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  align-items: center;
+  gap: 24px;
+}
+.footer .medias i {
+  font-size: 24px;
+  color: #888;
+}
+
+.footer .info {
+  width: 250px;
+}
+
+@media (max-width: 960px) {
+  .footer .medias {
+    justify-content: center;
+  }
+  .footer .marca {
+    width: 250px;
+    text-align: center;
+  }
+  .footer .address {
+    font-size: 14px;
+  }
+  .footer .contact-info {
+    font-size: 14px;
+  }
+}

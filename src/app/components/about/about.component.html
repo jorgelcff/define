@@ -1,0 +1,50 @@
+<section class="about" id="about">
+  <div class="max-width">
+    <h2 class="title">
+      <img src="../assets/image/logotipo.png" alt="Logotipo Define Fitness" />
+    </h2>
+    <div class="about-content">
+      <div class="column left">
+        <div
+          [class.mapouter-small]="!getSizeScreen()"
+          [class.mapouter]="getSizeScreen()"
+        >
+          <div
+            [class.gmap-canvas-small]="!getSizeScreen()"
+            [class.gmap-canvas]="getSizeScreen()"
+          >
+            <iframe
+              [width]="sizeMap"
+              [height]="sizeMap"
+              id="gmap_canvas"
+              src="https://maps.google.com/maps?q=Define%20Fitness&t=&z=17&ie=UTF8&iwloc=&output=embed"
+              frameborder="0"
+              scrolling="no"
+              marginheight="0"
+              marginwidth="0"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="column right">
+        <p>
+          Completando 1 ano de história, a Define Fitness Academia é o lugar
+          perfeito para quem busca uma academia completa em Recife, Pernambuco.
+          Nossa missão é proporcionar um ambiente acolhedor e motivador, onde
+          todos possam alcançar seus objetivos de condicionamento físico.
+        </p>
+
+        <p>
+          Contamos com ambiente climatizado para treinos confortáveis, armários
+          com cadeado para guardar pertences com segurança e chuveiros para
+          refrescar após os exercícios.
+        </p>
+        <p>
+          Nossa equipe de instrutores está pronta para ajudar você a atingir
+          seus objetivos. Venha conosco!
+        </p>
+        <button href="#" class="btn">Entrar em contato!</button>
+      </div>
+    </div>
+  </div>
+</section>

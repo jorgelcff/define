@@ -1,0 +1,73 @@
+<section class="activities" id="activities">
+  <div class="max-width">
+    <h2 class="titlex">Variedades Em Atividades</h2>
+    <h4 class="subtitle">
+      Oferecemos musculação, grade de ginástica com 11 modalidades e artes
+      marciais para você se desafiar e alcançar seus objetivos!
+    </h4>
+  </div>
+  <ngb-carousel class="carousel" [interval]="3500">
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper card">
+        <div class="column right ginastica-foto">
+          <div class="text">Ginástica</div>
+        </div>
+        <div class="column left ginastica"></div>
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper card">
+        <div class="column right musculacao-foto">
+          <div class="text">Musculação</div>
+        </div>
+        <div class="column left musculacao">
+          <table class="table-musculacao">
+            <tr>
+              <th>SEGUNDA A QUINTA</th>
+              <th style="text-align: right">DAS 5H ÀS 23H</th>
+            </tr>
+            <tr>
+              <th>SEXTA</th>
+              <th style="text-align: right">DAS 5H ÀS 22H</th>
+            </tr>
+            <tr>
+              <th>SÁBADOS</th>
+              <th style="text-align: right">DAS 8H ÀS 15H</th>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper card">
+        <div class="column right artesmarciais-foto">
+          <div class="text">Artes Marciais</div>
+        </div>
+        <div class="column left artesmarciais">
+          <table class="table-musculacao">
+            <tr>
+              <th>LUTAS KIDS</th>
+              <th style="text-align: right">TERÇA & QUINTA</th>
+              <th style="text-align: right">5H ÀS 23H</th>
+            </tr>
+            <tr>
+              <th>JIU-JÍTSU</th>
+              <th style="text-align: right">SEGUNDA & QUARTA</th>
+              <th style="text-align: right">5H ÀS 22H</th>
+            </tr>
+            <tr>
+              <th>MUAY THAI</th>
+              <th style="text-align: right">TERÇA & QUINTA</th>
+              <th style="text-align: right">8H ÀS 15H</th>
+            </tr>
+            <tr>
+              <th>BOXE</th>
+              <th style="text-align: right">SEGUNDA & QUARTA</th>
+              <th style="text-align: right">8H ÀS 15H</th>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </ng-template>
+  </ngb-carousel>
+</section>
