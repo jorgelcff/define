@@ -15,7 +15,7 @@ export class HomeComponent {
 
   initTyped() {
     const options = {
-      strings: ["Um novo conceito de academia!"],
+      strings: ["Um novo conceito de academia!", "Defina metas, não limites."],
       typeSpeed: 100,
       backSpeed: 60,
       loop: true,
